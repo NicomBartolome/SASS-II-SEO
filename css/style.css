@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/destacados.jpg");
+    background-image: linear-gradient(white, lightgrey);
     background-size: 100%;
 }
 
@@ -7,7 +7,8 @@ body{
         display: grid;
         grid-template-columns: 200px 1fr;
         grid-template-rows: 200px;
-        background-color: lightgray;
+        background-image: url("../img/destacados.jpg");
+       /*  background-image: linear-gradient(white, lightgrey); */
     }
 
 .encabezado img{
@@ -28,6 +29,10 @@ body{
 
 .navMenu a{
     text-decoration: none;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 15px;
+    color: black;
 }
 
 .cuerpoWeb{
@@ -118,8 +123,10 @@ footer{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 150px;
-    background-color: lightgray;
+    background-image: url("../img/destacados.jpg");
+    /* background-image: linear-gradient(white, lightgrey); */
     width: 100%;
+    color: black;
 }
 
 footer h5{
@@ -153,6 +160,10 @@ footer h5{
 
 footer a{
     text-decoration: none;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
 }
 
 .navMenu a:hover{
