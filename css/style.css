@@ -7,7 +7,7 @@ body{
         display: grid;
         grid-template-columns: 200px 1fr;
         grid-template-rows: 200px;
-        background-color: lightgray;
+        background-image: linear-gradient(white, lightgrey);
     }
 
 .encabezado img{
@@ -118,7 +118,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 150px;
-    background-color: lightgray;
+    background-image: linear-gradient(white, lightgrey);
     width: 100%;
 }
 
