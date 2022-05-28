@@ -1,0 +1,219 @@
+body{
+    background-image: url("../img/destacados.jpg");
+    background-size: 100%;
+}
+
+    header{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 200px;
+        background-color: lightgray;
+    }
+
+.encabezado img{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cuerpoWeb{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+}
+
+.cuerpoWebE{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+}
+
+#Titulo{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#subtitulo{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 50px;
+}
+
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.seccion1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.seccion2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.seccion1 img{
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+}
+
+#solicitar{
+    width: 25%;
+    background-color: lightgray;
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 150px;
+    background-color: lightgray;
+    width: 100%;
+}
+
+footer h5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.RedesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+.RedesSociales img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encabezado img{
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+
+    .navMenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    #Titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #subtitulo{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .cuerpoWeb{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+                
+    }
+
+    .Formulario{
+        padding: 25px
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: lightgray;
+        width: 100%;
+    }
+
+    footer h5{
+        font-size: 7px;
+    }
+
+    .imgSECe{
+        width: 50%;
+        height: 50%;
+    }
+
+    .seccion2 p{
+        font-size: 13px;
+    }
+}
