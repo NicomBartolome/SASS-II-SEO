@@ -185,6 +185,14 @@ footer a:hover{
     transform: rotateY(360deg);
 }
 
+.botonFooter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    width: 100%;
+    align-items: center;
+}
+
 .wdt{
     width: 50%;
 }
