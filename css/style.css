@@ -129,7 +129,7 @@ footer{
     color: black;
 }
 
-footer h5{
+/* footer h5{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,7 +138,7 @@ footer h5{
     font-size: 15px;
     align-items: center;
     font-family:  'Roboto', sans-serif;
-}
+} */
 
 .RedesSociales{
     display: flex;
@@ -172,6 +172,12 @@ footer a{
 
 footer a:hover{
     color: blue;
+}
+
+.BTNHover:hover{
+    color: lightgray;
+    text-decoration: none;
+    
 }
 
 .encabezado img:hover{
