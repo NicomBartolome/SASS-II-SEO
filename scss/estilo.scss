@@ -1,11 +1,26 @@
 $colorprincipal:lightgrey;
 @import "hovers";
 
+@mixin RedesSociales($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+$imagenescentrales:(
+    internet: 100%,
+    internetytv: 100%,
+    solucionamed: 100%
+);
+
+$display-grid:(
+    display: grid
+);
+
 body{
    background-image: linear-gradient(white, $colorprincipal);
    background-size: 100%;
    header{
-    display: grid;
+    display: map-get($display-grid , display);
     grid-template-columns: 200px 1fr;
     grid-template-rows: 200px;
     background-image: url("../img/destacados.jpg");
@@ -20,8 +35,10 @@ body{
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-        .wdtIndex{
-            width: 100%;
+        @each $imgcentral,$anchoimg in $imagenescentrales {
+            .imgcent-#{$imgcentral}{
+                width: $anchoimg;
+            }
         }
     }
 
@@ -40,6 +57,11 @@ body{
             align-items: center;
         }
 
+        .botonBaja{
+            @extend .botonFooter;
+            size: 50px;
+        }
+
         a{
             text-decoration: none;
             background-color: $colorprincipal;
@@ -55,8 +77,7 @@ body{
             align-items: center;
             list-style: none;
             img{
-                width: 50px;
-                height: 50px;
+                @include RedesSociales(50px,50px )
             }
         }
     }

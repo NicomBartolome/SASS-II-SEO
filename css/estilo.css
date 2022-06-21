@@ -44,7 +44,15 @@ body .cuerpoWeb {
       grid-template-rows: auto auto;
 }
 
-body .cuerpoWeb .wdtIndex {
+body .cuerpoWeb .imgcent-internet {
+  width: 100%;
+}
+
+body .cuerpoWeb .imgcent-internetytv {
+  width: 100%;
+}
+
+body .cuerpoWeb .imgcent-solucionamed {
   width: 100%;
 }
 
@@ -60,7 +68,7 @@ body footer {
   color: black;
 }
 
-body footer .botonFooter {
+body footer .botonFooter, body footer .botonBaja {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +80,10 @@ body footer .botonFooter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body footer .botonBaja {
+  size: 50px;
 }
 
 body footer a {
@@ -99,8 +111,8 @@ body footer .RedesSociales {
 }
 
 body footer .RedesSociales img {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -156,7 +168,7 @@ body footer .RedesSociales img {
     background-color: lightgrey;
     width: 100%;
   }
-  footer .botonFooter {
+  footer .botonFooter, body footer .botonBaja {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
