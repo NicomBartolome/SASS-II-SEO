@@ -44,16 +44,22 @@ body .cuerpoWeb {
       grid-template-rows: auto auto;
 }
 
-body .cuerpoWeb .imgcent-internet {
+body .cuerpoWeb .wdtIndex {
   width: 100%;
 }
 
-body .cuerpoWeb .imgcent-internetytv {
+body .cuerpoWebE {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
-body .cuerpoWeb .imgcent-solucionamed {
-  width: 100%;
+body .cuerpoWebE .wdt {
+  width: 50%;
 }
 
 body footer {
@@ -142,10 +148,10 @@ body footer .RedesSociales img {
     height: 100px;
     margin: 20px;
   }
-  body header .encabezado .RPON {
+  body header .RPON {
     font-size: 10px;
   }
-  body header .cuerpoWeb {
+  body .cuerpoWeb {
     display: -ms-grid;
     display: grid;
     width: 100%;
@@ -154,11 +160,24 @@ body footer .RedesSociales img {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  body header .cuerpoWeb .wdtIndex {
+  body .cuerpoWeb .wdtIndex {
     width: 300px;
     height: 300px;
   }
-  footer {
+  body .cuerpoWebE {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  body .cuerpoWebE .wdt {
+    width: 300px;
+    height: 300px;
+  }
+  body footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -168,7 +187,7 @@ body footer .RedesSociales img {
     background-color: lightgrey;
     width: 100%;
   }
-  footer .botonFooter, body footer .botonBaja {
+  body footer .botonFooter, body footer .botonBaja {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -182,7 +201,7 @@ body footer .RedesSociales img {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer h5 {
+  body footer h5 {
     font-size: 7px;
   }
 }

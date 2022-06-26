@@ -1,0 +1,39 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 150px;
+    background-image: url("../img/destacados.jpg");
+    width: 100%;
+    color: black;
+    .botonFooter{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .botonBaja{
+        @extend .botonFooter;
+        size: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: $colorprincipal;
+        padding: 15px;
+        border-radius: 20px;
+        color: black;
+    }
+    
+    .RedesSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        img{
+            @include RedesSociales(50px,50px )
+        }
+    }
+}

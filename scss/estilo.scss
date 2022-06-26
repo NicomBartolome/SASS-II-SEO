@@ -12,6 +12,12 @@ $imagenescentrales:(
     solucionamed: 100%
 );
 
+$imagenescentrales_rpon:(
+    internet: 300px,
+    internetytv: 300px,
+    solucionamed: 300px
+);
+
 $display-grid:(
     display: grid
 );
@@ -19,118 +25,30 @@ $display-grid:(
 body{
    background-image: linear-gradient(white, $colorprincipal);
    background-size: 100%;
-   header{
-    display: map-get($display-grid , display);
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 200px;
-    background-image: url("../img/destacados.jpg");
-        .encabezado img{
-            width: 150px;
-            height: 150px;
-            margin: 25px;
-        }
-   }
+   @import "header";
+
+
    .cuerpoWeb{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-        @each $imgcentral,$anchoimg in $imagenescentrales {
-            .imgcent-#{$imgcentral}{
-                width: $anchoimg;
-            }
-        }
-    }
-
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        grid-template-rows: 150px;
-        background-image: url("../img/destacados.jpg");
+    .wdtIndex{
         width: 100%;
-        color: black;
-        .botonFooter{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3px;
-            width: 100%;
-            align-items: center;
-        }
-
-        .botonBaja{
-            @extend .botonFooter;
-            size: 50px;
-        }
-
-        a{
-            text-decoration: none;
-            background-color: $colorprincipal;
-            padding: 15px;
-            border-radius: 20px;
-            color: black;
-        }
-        
-        .RedesSociales{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
-            img{
-                @include RedesSociales(50px,50px )
-            }
         }
     }
-}
 
-@media screen and (max-width: 767px){
-    body{
-        header{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            width: 100%;
-            .encabezado{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                    img{
-                        width: 100px;
-                        height: 100px;
-                        margin: 20px;
-                    }
-                    .RPON{
-                        font-size: 10px;
-                    }
-            }
-            .cuerpoWeb{
-                display: grid;
-                width: 100%;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                .wdtIndex{
-                    width: 300px;
-                    height: 300px;
-                }
-            }
-        }
-    }
-    footer{
+    .cuerpoWebE{
         display: grid;
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        background-color: $colorprincipal;
-        width: 100%;
-        .botonFooter{
-            display: flex;
-            justify-content: center;
-            font-size: 7px;
-            margin-bottom: 3px;
-            width: 100%;
-            align-items: center;
-        }
-        h5{
-            font-size: 7px;
-        }
+        .wdt{
+            width: 50%;
+        }        
     }
+
+    @import "footer";
 }
+
+@import "responsive";

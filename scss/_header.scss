@@ -1,0 +1,11 @@
+header{
+    display: map-get($display-grid , display);
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px;
+    background-image: url("../img/destacados.jpg");
+        .encabezado img{
+            width: 150px;
+            height: 150px;
+            margin: 25px;
+        }
+   }
